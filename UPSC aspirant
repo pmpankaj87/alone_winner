@@ -1,0 +1,259 @@
+#include <iostream>
+#include <string>
+using  namespace std;
+void GS1();
+void GS2();
+void GS3();
+void GS4();
+int main()
+    {
+        int Course_Choice;
+    cout<<"Press 1 for GS1(Hitory,Art & Culture,Geography,Remaining Topics):\n";
+    cout<<"Press 2 for GS2(Governance,Constitution & Polity,Social Justice,International Relation):\n";
+    cout<<"Press 3 for GS3(Economy,Environment,Internal Security,Disaster Management,Science & Technology):\n";
+    cout<<"Press 4 for GS4(Ethics):\n";
+    cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+    cout<<"Enter your Course_Choice :";
+    cin>>Course_Choice;
+    cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+    switch(Course_Choice)
+{
+    case 1: 
+    GS1();
+    break;
+    case 2:
+    GS2();
+    break;
+    case 3:
+    GS3();
+    break;
+    case 4:
+    GS4();
+    break; 
+    default:
+    cout<<"invalid!!!!";
+    break;
+    cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+}
+return 0;
+    }
+void GS1()
+{
+    int Subject_Choice;
+     cout<<"Press 1:For History \n";
+     cout<<"Press 2:For Art & Culture \n";
+     cout<<"Press 3:For Geography \n";
+     cout<<"Press 4:For Remaining Topics \n";
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+     cout<<"Enter your Subject_Choice :";
+     cin>>Subject_Choice;
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";     
+    if(Subject_Choice==1)
+       {
+     string extra_syllabus_for_history;
+     cout<<"New NCERT CLASSES :- 6-12\n";
+     cout<<"freedom Struggle :- A Brief History Of Modern India [BY SPECTRUN]\n";
+     cout<<"Post Independance India :- BNITIN SANGWAN NOTES\n";
+     cout<<"World History :- VISION IAS NOTES \n\n";
+     cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+     cin>>extra_syllabus_for_history;
+     cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+     }
+     else if(Subject_Choice==2)
+     {
+        string extra_syllabus_for_arts_and_culture;
+        cout<<"NCERT CLASS 9 :- An introduction to Indian Art \n";
+        cout<<"Indian Art and Culture [BY NITIN SINGHANIA] \n";
+        cout<<"OLD NCERT CLASS 9 :- Ancient India [BY R.S SHARMA] \n ";
+        cout<<"OLD NCERT CLASS 9 :- Medieval  India [BY SATIS H CHANDRA] \n";
+        cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        cin>>extra_syllabus_for_arts_and_culture;
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+         }
+         else if(Subject_Choice==3)
+     {
+        string extra_syllabus_for_geography;
+        cout<<"NEW NCERT CLASSES :- 6-10 and 11-12[important] \n";
+        cout<<"Geography Videos [BY MS. RAJTANIL](aailable on Mrunal) \n";
+        cout<<"Certificate Physical and Human Georaphy [BY GC LEONG] \n"; 
+        cout<<"PMF IAS \n";
+        cout<<"Atlas \n";
+        cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        cin>>extra_syllabus_for_geography;
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+     }
+         else if(Subject_Choice==4)
+     {
+        string extra_syllabus_for_remaining_topics;
+        cout<<"All topics are covered from VISION IAS , Current Affairs material & Test Series \n";
+        cout<<"Indian Society and Diveresity of India \n";
+        cout<<"Women,Population,Urbanisation,Poverty and Development Issues \n";
+        cout<<"Effects of Globalisation on Indian Society \n";
+        cout<<"Social Empowerment,Communalism,Regionalism & Secularism \n";
+        cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        cin>>extra_syllabus_for_remaining_topics;
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+     }
+     else
+    {
+    cout<<"Invalid Imput!!!";
+    cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+    }
+}
+void GS2()
+{
+    int Subject_Choice;
+     cout<<"Press 1:For Governance \n";
+     cout<<"Press 2:For Constitution & Polity \n";
+     cout<<"Press 3:For Social Justice\n";
+     cout<<"Press 4:For International Relation\n";
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+     cout<<"Enter your Subject_Choice :";
+     cin>>Subject_Choice;
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";     
+    if(Subject_Choice==1)
+       {
+     string extra_syllabus_for_governance;
+     cout<<"2nd ARC Reports :- 1,4,9,10,11 & 12 [IMPORTANT] \n";
+     cout<<"VISION IAS NOTES \n";
+     cout<<"CURRENT AFFAIRS :- Editorials,Vision IAS material,PRS & PIB \n";
+     cout<<"You Can also write some more important this according to you or otherwise click on enter button: ";
+        getline(cin,extra_syllabus_for_governance);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+     }
+    
+     else if(Subject_Choice==2)
+       {
+     string extra_syllabus_for_Constitution_and_Polity;
+     cout<<"NEW NCERT CLASSES :- 6-12 \n";
+     cout<<"Indian Polity [BY LAXMIKANTH \n";
+     cout<<"CURRENT AFFAIRS :- Editorials,Vision IAS material,PRS & PIB \n";
+     cout<<"2nd ARC SIXTH Report :- Local Goverance \n";
+     cout<<"VISION IAS NOTES for topics like Pressure Group,NGOs \n";
+     cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_Constitution_and_Polity);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+     else if(Subject_Choice==3)
+       {
+     string extra_syllabus_for_Social_Justice;
+     cout<<"Government polices and interventions \n";
+     cout<<"Welfare Schemes and bodies constituted for vulnerable sections \n";
+     cout<<"Social Sector/Services relating to Health,Education,Human Resources \n";
+     cout<<"Issues relating t poverty and hunger \n";
+     cout<<"Above all topics are covered from :- \n";
+     cout<<"1.CURRENT AFFAIRS :-Editorials,Vision IAS materials,PIB \n";
+     cout<<"2.NITI Aayog's Three Year Action Agenda \n";
+     cout<<"BUDGET and ECONOMIC SURVEY(summaries) \n";
+     cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_Social_Justice);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+        else if(Subject_Choice==4)
+       {
+     string extra_syllabus_for_International_Relation;
+     cout<<"VISION IAS current affairs material [IMPORTANT] \n";
+     cout<<"Editorials \n";
+     cout<<"Minitry of External Affairs Website \n";
+     cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_International_Relation);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+        else
+    {
+    cout<<"Invalid Imput!!!";
+    cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+    }
+}
+void GS3()
+{
+    int Subject_Choice;
+     cout<<"Press 1:For Economy \n";
+     cout<<"Press 2:For Environment \n";
+     cout<<"Press 3:For Internal Security \n";
+     cout<<"Press 4:For Disaster Management \n";
+     cout<<"Press 5:For Science & Technology \n";
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+     cout<<"Enter your Subject_Choice :";
+     cin>>Subject_Choice;
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";     
+    if(Subject_Choice==1)
+       {
+     string extra_syllabus_for_Economy;
+     cout<<"NCERT CLASS 9 - 12 [important] \n";
+     cout<<"Indian Economy [BY SANJEEV VERMA] \n";
+     cout<<"CURRENT AFFAIRS :- Editorials,Vision IAS material, PIB [important] \n";
+     cout<<"BUDGET and ECONOMIC SURVEY [summaries] \n";
+     cout<<"Online Websites like INVESTOPEDIA and ARTHAPEDIA \n";
+     cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_Economy);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+        else if(Subject_Choice==2)
+       {
+     string extra_syllabus_for_Environment;
+        cout<<"NCERT BIOLOGY CLASS 12 :- Last 4 chapters (13th - 16 th) \n";
+        cout<<"SHANKAR IAS Environment \n";
+        cout<<"CURRENT AFFAIRS :- Editorials,Visiion IAS material,PIB \n";
+        cout<<"PMF IAS \n";
+        cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_Environment);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+        else if(Subject_Choice==3)
+       {
+     string extra_syllabus_for_Internal_Security;
+         cout<<"Internal Security and Disaster Management [BY ASHOK KUMAR and VIPUL] \n ";
+         cout<<"CURRENT AFFAIRS :- Editorials,Vision IAS material \n";
+         cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+         getline(cin,extra_syllabus_for_Internal_Security);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+         else if(Subject_Choice==4)
+       {
+     string extra_syllabus_for_Disaster_Management;
+        cout<<"2nd ARC Third Report :- Crisis Management \n";
+        cout<<"NDMA Guidelines (available online) \n";
+        cout<<"CURRENT AFFAIRS :- Vision IAS material \n";
+        cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_Disaster_Management);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+         else if(Subject_Choice==5)
+       {
+     string extra_syllabus_for_Science_and_Technology;
+        cout<<"VISION IAS  Current Affairs material (only the most imortant topics) \n";
+        cout<<"Editorials \n";
+        cout<<"You Can also write some more important this according to you or otherwise click on enter button:";
+        getline(cin,extra_syllabus_for_Science_and_Technology);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+        else
+    {
+    cout<<"Invalid Imput!!!";
+    cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";      
+    }
+}
+void  GS4()
+{
+   int Subject_Choice;
+     cout<<"Press 1:For Ethics \n";
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";
+     cout<<"Enter your Subject_Choice :";
+     cin>>Subject_Choice;
+     cout<<"----------------------------------------------------------------------------------------------------------------- \n";     
+    if(Subject_Choice==1)
+       {
+     string extra_syllabus_for_Ethics;
+     cout<<"2nd ARC Fourth Report :- Ethics in Governance [important] \n";
+     cout<<"2nd ARC Twelfth Report:- Citizen Centric Administration \n";
+     cout<<"Lexion for Ethics,Integrity & Aptitude [BY CHRONICLE] \n";
+     getline(cin,extra_syllabus_for_Ethics);
+        cout<<"\n----------------------------------------------------------------------------------------------------------------- \n";
+        }
+        else
+    {
+    cout<<"Invalid Imput!!!";
+    cout<<"\n--------------------------------------------------------------------------------------------------------------------- \n";      
+    }
+}
